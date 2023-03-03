@@ -18,7 +18,7 @@ FROM tomcat:9.0-jdk11
 WORKDIR /app
 
 # Copy the WAR file to the container's /app directory
-COPY c:/Users/manju/.jenkins/workspace/test3/target/ABCtechnologies-1.0.war /app
+COPY target/ABCtechnologies-1.0.war /app
 
 # Remove the default Tomcat welcome page
 RUN rm -rf $CATALINA_HOME/webapps/ROOT/*
